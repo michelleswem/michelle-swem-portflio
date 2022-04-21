@@ -1,0 +1,35 @@
+/* ----------------------------------------------- */
+/* ABOUT */
+/* ----------------------------------------------- */
+@import "../../sass/abstracts/variables";
+.section-about {
+  background-color: $color-grey;
+}
+
+.about-me {
+  font-size: 1.4rem;
+  width: 70%;
+  margin-bottom: 1.5rem;
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.col {
+  padding-top: 8rem;
+}
+.profile-image {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+.aboutme-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  width: 50%;
+}

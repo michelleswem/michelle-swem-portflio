@@ -1,0 +1,39 @@
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+@import "../../sass/abstracts/variables";
+
+.header {
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 12rem 0.3rem 12rem;
+  background-color: $color-grey;
+  .logo {
+    letter-spacing: -1px;
+  }
+}
+.nav {
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 8rem;
+    }
+  }
+
+  a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    transition: all 0.2s ease-out;
+  }
+  a:hover,
+  a:active,
+  .active {
+    background-color: $color-organe;
+    color: $color-white;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}

@@ -1,0 +1,24 @@
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+@import "../../sass/abstracts/variables";
+.footer {
+  padding: 3.7rem 0;
+  background-color: $color-grey-2;
+  color: $color-grey-3;
+  text-align: center;
+  font-size: 1.4rem;
+
+  &__text {
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
