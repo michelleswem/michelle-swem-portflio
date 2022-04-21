@@ -13,7 +13,7 @@ function AboutMe() {
             <p className={classes["about-me"]}>
               I&apos;m a Frontend Developer and content writer with a great
               passion for building things with code. I live in Nigeria where I
-              build Client facing userterfaces for website and app.
+              build Client facing user-interfaces for website and app.
             </p>
             <p className={classes["about-me"]}>
               My believe is, When you embrace yourself and you believe in your
