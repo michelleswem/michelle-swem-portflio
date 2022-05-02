@@ -1,80 +1,141 @@
 import Button from "../UI/Button";
 import classes from "./ProjectSection.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 function ProjectSection() {
   return (
-    <section className={classes["section-project"]}>
+    <section className={classes["section-portflio"]}>
       <div className="text-center margin-bottom">
         <h1 className="heading-primary heading-primary__white">Projects</h1>
       </div>
 
       <div className="row">
-        <ul className={classes.contentList}>
-          <li className={classes.contentList__item}>
-            <div className={classes.contentList__box}>
-              {/* <img
-                src="/assets/code-image.jpg"
-                alt="code"
-                className={classes.contentList__img}
-                // width={300}
-                // height={200}
-              /> */}
-              <h3 className={classes.contentList__title}>Expense Tracker</h3>
-              <p className={classes.contentList__text}>
-                Developed this project with a friend where users can share
-                resources , read blogs, and chat with their seniours and
-                juniours.
-              </p>
-              {/* <Button className="btn__organe">Expense Tracker</Button> */}
-            </div>
-          </li>
-          <li className={classes.contentList__item}>
-            <div className={classes.contentList__box}>
-              <h3 className={classes.contentList__title}>Expense Tracker</h3>
+        <div className={classes.portfolioList}>
+          <figure
+            className={`${classes.portfolioList__item1} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item1.jpg"
+              alt="expense-tracker"
+              className={`${classes.portfolioList__img} ${classes.portfolioList__item}`}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Launch</a>
+              </Link>
+            </figcaption>
+          </figure>
 
-              <p className={classes.contentList__text}>
-                Developed this project with a friend where users can share
-                resources , read blogs, and chat with their seniours and
-                juniours.
-              </p>
-              {/* <img
-                src="/assets/code-image.jpg"
-                alt="code"
-                className={classes.contentList__img}
-                // width={300}
-                // height={200}
-              /> */}
+          <figure
+            className={`${classes.portfolioList__item2} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item2.jpg"
+              alt="expense-tracker"
+              className={classes.portfolioList__img}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Launch</a>
+              </Link>
+            </figcaption>
+          </figure>
 
-              {/* <Button className="btn__organe">Social Learning Platform</Button> */}
-            </div>
-          </li>
+          <figure
+            className={`${classes.portfolioList__item3} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item3.jpg"
+              alt="expense-tracker"
+              className={classes.portfolioList__img}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Launch</a>
+              </Link>
+            </figcaption>
+          </figure>
 
-          <li className={classes.contentList__item}>
-            <div className={classes.contentList__box}>
-              <h3 className={classes.contentList__title}>Expense Tracker</h3>
+          <figure
+            className={`${classes.portfolioList__item4} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item4.jpg"
+              alt="expense-tracker"
+              className={classes.portfolioList__img}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Launch</a>
+              </Link>
+            </figcaption>
+          </figure>
 
-              <p className={classes.contentList__text}>
-                Developed this project with a friend where users can share
-                resources , read blogs, and chat with their seniours and
-                juniours.
-              </p>
-              {/* <img
-                src="/assets/code-image.jpg"
-                alt="code"
-                className={classes.contentList__img}
-                // width={300}
-                // height={200}
-              /> */}
+          <figure
+            className={`${classes.portfolioList__item5} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item5.jpg"
+              alt="expense-tracker"
+              className={classes.portfolioList__img}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Launch</a>
+              </Link>
+            </figcaption>
+          </figure>
 
-              {/* <Button className="btn__organe">Social Learning Platform</Button> */}
-            </div>
-          </li>
-        </ul>
+          <figure
+            className={`${classes.portfolioList__item6} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item6.jpg"
+              alt="expense-tracker"
+              className={classes.portfolioList__img}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Github</a>
+              </Link>
+            </figcaption>
+          </figure>
 
-        <div className="text-center">
-          <Button className="btn__text">See more projects &rarr;</Button>
+          <figure
+            className={`${classes.portfolioList__item7} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item7.jpg"
+              alt="expense-tracker"
+              className={classes.portfolioList__img}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Launch</a>
+              </Link>
+            </figcaption>
+          </figure>
+
+          <figure
+            className={`${classes.portfolioList__item8} ${classes.portfolioList__item}`}
+          >
+            <img
+              src="/assets/portfolio-item8.jpg"
+              alt="expense-tracker"
+              className={classes.portfolioList__img}
+            />
+            <figcaption className={classes.portfolioList__caption}>
+              <Link href="/">
+                <a className={classes.portfolioList__launch}>Github</a>
+              </Link>
+            </figcaption>
+          </figure>
         </div>
+      </div>
+
+      <div className="text-center">
+        <Button className="btn btn__round">See more projects &rarr;</Button>
       </div>
     </section>
   );

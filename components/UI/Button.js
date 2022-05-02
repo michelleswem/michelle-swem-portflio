@@ -5,8 +5,8 @@ const Button = (props) => {
 
   if (props.link) {
     return (
-      <Link className={classNames} href={props.link}>
-        {props.children}
+      <Link href={props.link}>
+        <a className={classNames}>{props.children}</a>
       </Link>
     );
   }

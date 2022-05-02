@@ -6,14 +6,17 @@
 .about-me {
   font-size: 1.6rem;
   color: #dfdfdf;
-  margin-bottom: 1.5rem;
-  &__cta {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
   }
 }
 
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
 .aboutme-socials {
   display: flex;
   align-items: center;
@@ -48,4 +51,8 @@
   &__photo {
     height: 100%;
   }
+}
+.play {
+  height: 1.5rem;
+  width: 1.5rem;
 }

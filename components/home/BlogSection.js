@@ -68,10 +68,9 @@ function BlogSection() {
             </Card>
           </li>
         </ul>
-
-        <div className="text-center">
-          <Button className="btn__text">See more posts &rarr;</Button>
-        </div>
+      </div>
+      <div className="text-center">
+        <Button className="btn btn__round">See more posts &rarr;</Button>
       </div>
     </section>
   );

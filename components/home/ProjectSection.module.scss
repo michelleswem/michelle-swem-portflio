@@ -3,39 +3,92 @@
 /* ----------------------------------------------- */
 @import "../../sass/abstracts/variables";
 
-.section-project {
-  // padding: 4rem 0;
-}
-
-.contentList {
-  color: $color-black;
+.portfolioList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 25vw);
   grid-gap: 2rem;
 
-  &__box {
-    background-color: $color-white;
-    padding: 2rem;
-    border-radius: 4px;
-    box-shadow: 0 2rem 3rem rgb(0 0 0 / 20%);
+  &__item {
+    position: relative;
+    cursor: pointer;
   }
 
-  &__title {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+  &__item1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
   }
 
-  &__text {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-bottom: 1.5rem;
+  &__item2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2;
   }
+
+  &__item3 {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+  }
+
+  &__item4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &__item5 {
+    grid-column: 3 / -1;
+    grid-row: 2 / 3;
+  }
+  &__item6 {
+    grid-column: 2/ 3;
+    grid-row: 3 / -1;
+  }
+  &__item7 {
+    grid-column: 1/ 2;
+    grid-row: 3 / -1;
+  }
+  &__item8 {
+    grid-column: 3/ -1;
+    grid-row: 3 / -1;
+  }
+
   &__img {
     object-fit: cover;
     display: block;
     width: 100%;
-    width: 55%;
-    margin: 0 auto;
+    height: 100%;
+    border-radius: 0.6rem;
+  }
+
+  &__launch {
+    font-size: 1.6rem;
+    color: $color-white;
+    border: 1px solid $color-white;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+  }
+
+  &__item:hover &__caption {
+    opacity: 1;
+    transform: scale(1);
   }
 }
