@@ -2,13 +2,10 @@
 /* ABOUT */
 /* ----------------------------------------------- */
 @import "../../sass/abstracts/variables";
-.section-about {
-  background-color: $color-grey;
-}
 
 .about-me {
-  font-size: 1.4rem;
-  width: 70%;
+  font-size: 1.6rem;
+  color: #dfdfdf;
   margin-bottom: 1.5rem;
   &__cta {
     display: flex;
@@ -17,19 +14,39 @@
   }
 }
 
-.col {
-  padding-top: 8rem;
-}
-.profile-image {
-  display: block;
-  object-fit: cover;
-  height: 100%;
-}
-
 .aboutme-socials {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  width: 50%;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff4a57;
+    padding: 1.3rem;
+    transition: all 0.3s ease;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+    &:hover {
+      background-color: #ff4a57;
+    }
+
+    svg {
+      height: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.shape {
+  margin: 0 auto;
+  &__photo {
+    height: 100%;
+  }
 }

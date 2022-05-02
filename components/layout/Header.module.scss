@@ -3,17 +3,19 @@
 /* ----------------------------------------------- */
 
 @import "../../sass/abstracts/variables";
-
 .header {
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 700;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 12rem 0.3rem 12rem;
-  background-color: $color-grey;
-  .logo {
-    letter-spacing: -1px;
-  }
+  align-items: center;
+  color: $color-white;
+  padding: 3rem 12rem;
+}
+
+.logobox {
+  letter-spacing: -1px;
+  font-weight: 800;
 }
 .nav {
   &__item {
@@ -27,13 +29,29 @@
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
-    transition: all 0.2s ease-out;
+    display: block;
+    position: relative;
+    &:focus {
+      border: none;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      height: 2px;
+      width: 0;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      background-color: #ff4a57;
+      margin-top: 0.5rem;
+    }
   }
   a:hover,
-  a:active,
-  .active {
-    background-color: $color-organe;
-    color: $color-white;
-    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+  a:hover::after,
+  a:active::after,
+  .active::after {
+    width: 100%;
+    left: 0;
+    color: #ff4a57;
   }
 }

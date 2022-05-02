@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import classes from "./Header.module.scss";
+import Image from "next/image";
 function Header() {
   const router = useRouter();
   const currentRoute = router.pathname;
   return (
     <header className={classes.header}>
-      <span className={classes.logo}>Swem Michelle</span>
+      <div className={classes.logobox}>
+        <span className={classes.logobox__name}>Swem Michelle</span>
+      </div>
       <nav className={classes.nav}>
         <ul className={classes.nav__list}>
           <li className={classes.nav__item}>

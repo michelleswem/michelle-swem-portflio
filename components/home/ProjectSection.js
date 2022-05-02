@@ -1,5 +1,4 @@
 import Button from "../UI/Button";
-import Card from "../UI/Card";
 import classes from "./ProjectSection.module.scss";
 import Image from "next/image";
 
@@ -13,37 +12,63 @@ function ProjectSection() {
       <div className="row">
         <ul className={classes.contentList}>
           <li className={classes.contentList__item}>
-            <Card>
-              <div>
-                <h3 className={classes.contentList__title}>Expense Tracker</h3>
-                <p className={classes.contentList__text}>
-                  Developed this expense tracker where users can track their
-                  expenses on a regular basis.
-                </p>
-                <Button className='btn__organe'>
-                  View Project
-                </Button>
-              </div>
+            <div className={classes.contentList__box}>
+              {/* <img
+                src="/assets/code-image.jpg"
+                alt="code"
+                className={classes.contentList__img}
+                // width={300}
+                // height={200}
+              /> */}
+              <h3 className={classes.contentList__title}>Expense Tracker</h3>
+              <p className={classes.contentList__text}>
+                Developed this project with a friend where users can share
+                resources , read blogs, and chat with their seniours and
+                juniours.
+              </p>
+              {/* <Button className="btn__organe">Expense Tracker</Button> */}
+            </div>
+          </li>
+          <li className={classes.contentList__item}>
+            <div className={classes.contentList__box}>
+              <h3 className={classes.contentList__title}>Expense Tracker</h3>
 
-              <Image src="/assets/poj-image.svg" height={533} width={1362} />
-            </Card>
+              <p className={classes.contentList__text}>
+                Developed this project with a friend where users can share
+                resources , read blogs, and chat with their seniours and
+                juniours.
+              </p>
+              {/* <img
+                src="/assets/code-image.jpg"
+                alt="code"
+                className={classes.contentList__img}
+                // width={300}
+                // height={200}
+              /> */}
 
-            <Card>
-              <div>
-                <h3 className={classes.contentList__title}>
-                  Social Learning Platform
-                </h3>
-                <p className={classes.contentList__text}>
-                  Developed this project with a friend where users can share
-                  resources , read blogs, and chat with their seniours and
-                  juniours.
-                </p>
-                <Button className='btn__organe'>
-                  View Project
-                </Button>
-              </div>
-              <Image src="/assets/pro-2.svg" height={533} width={1362} />
-            </Card>
+              {/* <Button className="btn__organe">Social Learning Platform</Button> */}
+            </div>
+          </li>
+
+          <li className={classes.contentList__item}>
+            <div className={classes.contentList__box}>
+              <h3 className={classes.contentList__title}>Expense Tracker</h3>
+
+              <p className={classes.contentList__text}>
+                Developed this project with a friend where users can share
+                resources , read blogs, and chat with their seniours and
+                juniours.
+              </p>
+              {/* <img
+                src="/assets/code-image.jpg"
+                alt="code"
+                className={classes.contentList__img}
+                // width={300}
+                // height={200}
+              /> */}
+
+              {/* <Button className="btn__organe">Social Learning Platform</Button> */}
+            </div>
           </li>
         </ul>
 

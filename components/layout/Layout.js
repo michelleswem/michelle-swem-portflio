@@ -1,13 +1,14 @@
+import { Fragment } from "react/cjs/react.production.min";
 import Footer from "./Footer";
 import Header from "./Header";
 
 function Layout(props) {
   return (
-    <div>
+    <Fragment>
       <Header />
       <main>{props.children}</main>
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 
