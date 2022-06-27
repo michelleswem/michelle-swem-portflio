@@ -1,7 +1,7 @@
 /* ----------------------------------------------- */
 /* BLOG */
 /* ----------------------------------------------- */
-@import "../../sass/abstracts/variables";
+@import "../../../sass/abstracts/variables";
 
 .contentList {
   &__image {
@@ -20,7 +20,7 @@
   &__container {
     padding: 3rem;
     span {
-      color: #dfdfdf;
+      color: $color-grey;
       font-size: 1.4rem;
       margin-bottom: 1rem;
     }
@@ -32,7 +32,7 @@
     margin-bottom: 1rem;
     letter-spacing: 1px;
     &:hover {
-      color: #ff4a57;
+      color: $color-red;
     }
   }
 

@@ -1,16 +1,16 @@
 import { Fragment } from "react";
-import AboutMe from "../components/home/AboutMe";
-import BlogSection from "../components/home/BlogSection";
-import ProjectSection from "../components/home/ProjectSection";
+import { About } from "../components/home/about";
+import { BlogSection } from "../components/home/blog";
+import { Projects } from "../components/home/projects";
 
-function Home() {
+const Home = () => {
   return (
     <Fragment>
-      <AboutMe />
-      <ProjectSection />
+      <About />
+      <Projects />
       <BlogSection />
     </Fragment>
   );
-}
+};
 
 export default Home;

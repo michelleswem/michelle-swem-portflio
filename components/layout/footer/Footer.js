@@ -1,7 +1,7 @@
-import classes from "./Footer.module.scss";
 import Link from "next/link";
+import classes from "./Footer.module.scss";
 
-function Footer() {
+export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className={classes.footer}>
@@ -113,6 +113,4 @@ function Footer() {
       </div>
     </footer>
   );
-}
-
-export default Footer;
+};

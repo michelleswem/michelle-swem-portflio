@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Button = (props) => {
+export const Button = (props) => {
   const classNames = "btn " + props.className;
 
   if (props.link) {
@@ -21,5 +21,3 @@ const Button = (props) => {
     </button>
   );
 };
-
-export default Button;

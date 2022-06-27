@@ -1,9 +1,8 @@
-import Button from "../UI/Button";
-import classes from "./ProjectSection.module.scss";
-import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../../UI/button";
+import classes from "./Projects.module.scss";
 
-function ProjectSection() {
+export const Projects = () => {
   return (
     <section className={classes["section-portflio"]}>
       <div className="text-center margin-bottom">
@@ -139,6 +138,4 @@ function ProjectSection() {
       </div>
     </section>
   );
-}
-
-export default ProjectSection;
+};

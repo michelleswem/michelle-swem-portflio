@@ -1,0 +1,30 @@
+/* ----------------------------------------------- */
+/* ABOUT */
+/* ----------------------------------------------- */
+@import "../../../sass/abstracts/variables";
+
+.about-me {
+  font-size: 1.6rem;
+  color: $color-grey;
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.shape {
+  margin: 0 auto;
+  &__photo {
+    height: 100%;
+  }
+}
+.play {
+  height: 1.5rem;
+  width: 1.5rem;
+}

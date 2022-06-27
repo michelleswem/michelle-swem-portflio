@@ -1,42 +1,29 @@
 /* ----------------------------------------------- */
-/* ABOUT */
+/* SOCIALS */
 /* ----------------------------------------------- */
-@import "../../sass/abstracts/variables";
+@import "../../../sass/abstracts/variables";
 
-.about-me {
-  font-size: 1.6rem;
-  color: #dfdfdf;
-  &:not(:last-of-type) {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.cta {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 4rem;
-}
-.aboutme-socials {
+.socials {
   display: flex;
   align-items: center;
   margin-top: 10rem;
   margin-bottom: 6rem;
-  &__icon {
+
+  &__link {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #ff4a57;
+    border: 2px solid $color-red;
     padding: 1.3rem;
     transition: all 0.3s ease;
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
     &:hover {
-      background-color: #ff4a57;
+      background-color: $color-red;
     }
 
     svg {
@@ -44,15 +31,4 @@
       height: 2rem;
     }
   }
-}
-
-.shape {
-  margin: 0 auto;
-  &__photo {
-    height: 100%;
-  }
-}
-.play {
-  height: 1.5rem;
-  width: 1.5rem;
 }

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import classes from "./Header.module.scss";
-import Image from "next/image";
-function Header() {
+
+export const Header = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
   return (
@@ -43,6 +43,4 @@ function Header() {
       </nav>
     </header>
   );
-}
-
-export default Header;
+};

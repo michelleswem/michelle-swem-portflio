@@ -1,11 +1,10 @@
+import { Card } from "../../UI/card";
+import { Button } from "../../UI/button";
 import classes from "./BlogSection.module.scss";
-import Card from "../UI/Card";
-import Button from "../UI/Button";
-import Image from "next/image";
 
-function BlogSection() {
+export const BlogSection = () => {
   return (
-    <section className={classes["section-project"]}>
+    <section className={classes["section-blog"]}>
       <div className="text-center margin-bottom">
         <h1 className="heading-primary heading-primary__white">Latest Blog</h1>
       </div>
@@ -74,6 +73,4 @@ function BlogSection() {
       </div>
     </section>
   );
-}
-
-export default BlogSection;
+};

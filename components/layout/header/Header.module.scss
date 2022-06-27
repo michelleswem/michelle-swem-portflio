@@ -2,7 +2,7 @@
 /* HEADER */
 /* ----------------------------------------------- */
 
-@import "../../sass/abstracts/variables";
+@import "../../../sass/abstracts/variables";
 .header {
   font-size: 1.8rem;
   font-weight: 700;
@@ -42,7 +42,7 @@
       height: 2px;
       width: 0;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      background-color: #ff4a57;
+      background-color: $color-red;
       margin-top: 0.5rem;
     }
   }
@@ -52,6 +52,6 @@
   .active::after {
     width: 100%;
     left: 0;
-    color: #ff4a57;
+    color: $color-red;
   }
 }
