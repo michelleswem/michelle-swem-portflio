@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { About } from "../components/home/about";
-import { BlogSection } from "../components/home/blog";
+import { Blog } from "../components/home/blog";
+import { Contact } from "../components/home/contact";
 import { Projects } from "../components/home/projects";
 
 const Home = () => {
@@ -8,7 +9,8 @@ const Home = () => {
     <Fragment>
       <About />
       <Projects />
-      <BlogSection />
+      <Blog />
+      <Contact />
     </Fragment>
   );
 };

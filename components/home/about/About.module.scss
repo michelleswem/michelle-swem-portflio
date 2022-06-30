@@ -28,3 +28,36 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+
+  &__list {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $color-red;
+    padding: 1.3rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-red;
+    }
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}

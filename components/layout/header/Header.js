@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Logo } from "../../UI/Logo";
 import classes from "./Header.module.scss";
 
 export const Header = () => {
@@ -7,9 +8,8 @@ export const Header = () => {
   const currentRoute = router.pathname;
   return (
     <header className={classes.header}>
-      <div className={classes.logobox}>
-        <span className={classes.logobox__name}>Swem Michelle</span>
-      </div>
+      <Logo />
+
       <nav className={classes.nav}>
         <ul className={classes.nav__list}>
           <li className={classes.nav__item}>
@@ -29,13 +29,6 @@ export const Header = () => {
             <Link href="/blog">
               <a className={currentRoute === "/blog" ? classes.active : ""}>
                 Blog
-              </a>
-            </Link>
-          </li>
-          <li className={classes.nav__item}>
-            <Link href="/#contact">
-              <a className={currentRoute === "/#contact" ? classes.active : ""}>
-                Contact
               </a>
             </Link>
           </li>

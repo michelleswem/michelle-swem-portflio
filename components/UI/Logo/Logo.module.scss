@@ -1,0 +1,9 @@
+@import "../../../sass/abstracts/variables";
+.logobox {
+  &__name {
+    letter-spacing: -1px;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: $color-red;
+  }
+}

@@ -1,0 +1,12 @@
+/* ----------------------------------------------- */
+/* BLOG */
+/* ----------------------------------------------- */
+@import "../../../sass/abstracts/variables";
+
+.contentList {
+  &__item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}

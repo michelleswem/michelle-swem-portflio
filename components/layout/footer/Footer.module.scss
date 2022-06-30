@@ -8,16 +8,10 @@
   padding: 10rem 0 0;
   text-align: center;
   font-size: 1.8rem;
-  background-color: #23263a;
-  &__logo {
-    letter-spacing: -1px;
-    font-weight: 800;
-    color: $color-white;
-    margin-bottom: 3rem;
-    display: block;
-  }
+  background-color: $color-primary-1;
 
   &__text {
+    margin-top: 3rem;
     margin-bottom: 1rem;
     width: 44%;
     margin-right: auto;
@@ -32,6 +26,12 @@
     margin-bottom: 4rem;
   }
 
+  &__list {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
   &__icon {
     height: 6rem;
     width: 6rem;
@@ -42,21 +42,19 @@
     background-color: $color-primary;
     padding: 1.3rem;
     transition: all 0.3s ease;
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
+
     &:hover {
       background-color: $color-red;
     }
 
     svg {
       height: 2rem;
-      height: 2rem;
+      width: 2rem;
     }
   }
 
   &__copyright {
     padding: 2rem 0;
-    background: #23263a;
+    background: $color-primary-1;
   }
 }

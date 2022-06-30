@@ -28,8 +28,7 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   color: $color-white;
-  // background-color: $color-primary;
-  background-color: #1f2235;
+  background-color: $color-primary;
 }
 
 li {
@@ -40,7 +39,7 @@ a {
 }
 
 section {
-  padding: 10rem 0 0 0;
+  padding: 10rem 0 10rem 0;
 }
 
 .heading-primary {
@@ -88,10 +87,10 @@ section {
 
   &__text {
     background-color: transparent;
-    color: #ff4a57;
+    color: $color-red;
     transition: all 0.2s ease;
     &:hover {
-      color: $color-white;
+      color: $color-grey;
       transform: translateY(-2px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     }
@@ -101,7 +100,7 @@ section {
     border-radius: 10rem;
     color: $color-white;
     background-color: transparent;
-    border: 2px solid #ff4a57;
+    border: 2px solid $color-red;
     font-weight: 500;
     display: inline-block;
     padding: 1.2rem 4rem;
@@ -110,12 +109,12 @@ section {
       120deg,
       transparent 0%,
       transparent 50%,
-      #ff4a57 50%
+      $color-red 50%
     );
     background-size: 240%;
 
     &--red {
-      background-color: #ff4a57;
+      background-color: $color-red;
     }
 
     &:hover {

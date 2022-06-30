@@ -1,5 +1,6 @@
-import { Socials } from "../../UI/socials";
-import { Button } from "../../UI/button";
+import { socials } from "../../../constants/social-links";
+import Link from "next/link";
+import { Button } from "../../UI/Button";
 import classes from "./About.module.scss";
 
 export const About = () => {
@@ -7,7 +8,15 @@ export const About = () => {
     <section className={classes["section-about"]}>
       <div className="row">
         <div className="col-1-of-2">
-          <Socials />
+          <ul className={classes.socials}>
+            {socials.map((social) => (
+              <li className={classes.socials__list} key={social.name}>
+                <Link href={social.url} title={social.name}>
+                  <a className={classes.socials__link}>{social.icon}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
           <h1 className="heading-primary">Swem Michelle</h1>
           <p className={classes["about-me"]}>
             I&apos;m a Frontend Developer and content writer with a great

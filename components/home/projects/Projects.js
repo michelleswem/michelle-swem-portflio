@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "../../UI/button";
+import { Button } from "../../UI/Button";
 import classes from "./Projects.module.scss";
 
 export const Projects = () => {
