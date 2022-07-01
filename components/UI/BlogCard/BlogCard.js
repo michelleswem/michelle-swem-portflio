@@ -1,10 +1,18 @@
+import Image from "next/image";
 import { Button } from "../Button";
 import classes from "./BlogCard.module.scss";
 
 export const BlogCard = (props) => {
   return (
     <div className={classes.card}>
-      <img src={props.image} alt={props.alt} className={classes.card__image} />
+      <Image
+        width={1280}
+        height={854}
+        layout="responsive"
+        src={props.image}
+        alt={props.alt}
+        className={classes.card__image}
+      />
       <div className={classes.card__container}>
         <span>{props.date}</span>
         <h3 className={classes.card__title}>{props.title}</h3>

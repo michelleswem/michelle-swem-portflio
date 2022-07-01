@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "../../UI/Button";
 import classes from "./Projects.module.scss";
 
@@ -14,7 +15,8 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item1} ${classes.portfolioList__item}`}
           >
-            <img
+            <Image
+              layout="fill"
               src="/assets/portfolio-item1.jpg"
               alt="expense-tracker"
               className={`${classes.portfolioList__img} ${classes.portfolioList__item}`}
@@ -29,7 +31,9 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item2} ${classes.portfolioList__item}`}
           >
-            <img
+            <Image
+              layout="fill"
+              priority
               src="/assets/portfolio-item2.jpg"
               alt="expense-tracker"
               className={classes.portfolioList__img}
@@ -44,7 +48,8 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item3} ${classes.portfolioList__item}`}
           >
-            <img
+            <Image
+              layout="fill"
               src="/assets/portfolio-item3.jpg"
               alt="expense-tracker"
               className={classes.portfolioList__img}
@@ -59,7 +64,8 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item4} ${classes.portfolioList__item}`}
           >
-            <img
+            <Image
+              layout="fill"
               src="/assets/portfolio-item4.jpg"
               alt="expense-tracker"
               className={classes.portfolioList__img}
@@ -74,7 +80,8 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item5} ${classes.portfolioList__item}`}
           >
-            <img
+            <Image
+              layout="fill"
               src="/assets/portfolio-item5.jpg"
               alt="expense-tracker"
               className={classes.portfolioList__img}
@@ -89,7 +96,8 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item6} ${classes.portfolioList__item}`}
           >
-            <img
+            <Image
+              layout="fill"
               src="/assets/portfolio-item6.jpg"
               alt="expense-tracker"
               className={classes.portfolioList__img}
@@ -104,8 +112,9 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item7} ${classes.portfolioList__item}`}
           >
-            <img
-              src="/assets/portfolio-item7.jpg"
+            <Image
+              layout="fill"
+              src="/assets/portfolio-item9.jpg"
               alt="expense-tracker"
               className={classes.portfolioList__img}
             />
@@ -119,8 +128,9 @@ export const Projects = () => {
           <figure
             className={`${classes.portfolioList__item8} ${classes.portfolioList__item}`}
           >
-            <img
-              src="/assets/portfolio-item8.jpg"
+            <Image
+              layout="fill"
+              src="/assets/portfolio-item10.jpg"
               alt="expense-tracker"
               className={classes.portfolioList__img}
             />

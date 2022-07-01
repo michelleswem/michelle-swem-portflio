@@ -1,7 +1,9 @@
 import { socials } from "../../../constants/social-links";
 import Link from "next/link";
-import { Button } from "../../UI/Button";
+import Image from "next/image";
+import { Button } from "../../UI/Button/Button";
 import classes from "./About.module.scss";
+import { YouTubeIcon } from "./youtubeIcon";
 
 export const About = () => {
   return (
@@ -31,33 +33,22 @@ export const About = () => {
 
           <div className={classes.cta}>
             <Button className="btn__round">My Projects</Button>
+
             <Button
               className="btn__round btn__round--red"
               link="https://www.youtube.com/channel/UCyl_xQGeSaY--gQ8s1R7VtA/featured"
             >
-              <svg
-                className={classes.play}
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="28"
-                viewBox="0 0 22 28"
-                fill="#ffffff"
-              >
-                <title>youtube</title>
-                <path
-                  fill="#ffffff"
-                  d="M21.625 14.484l-20.75 11.531c-0.484 0.266-0.875 0.031-0.875-0.516v-23c0-0.547 0.391-0.781 0.875-0.516l20.75 11.531c0.484 0.266 0.484 0.703 0 0.969z"
-                ></path>
-              </svg>
+              <YouTubeIcon />
             </Button>
           </div>
         </div>
 
         <div className="col-1-of-2">
           <figure className={classes.shape}>
-            <img
-              src="/assets/mim.png"
+            <Image
+              width={449}
+              height={555}
+              src="/assets/michelle.png"
               className={classes.shape__photo}
               alt="Swem Michelle"
             />
