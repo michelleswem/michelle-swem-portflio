@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../Button";
+import { Button } from "../Button/index";
 import classes from "./BlogCard.module.scss";
 
 export const BlogCard = (props) => {
@@ -8,6 +8,7 @@ export const BlogCard = (props) => {
       <Image
         width={1280}
         height={854}
+        priority
         layout="responsive"
         src={props.image}
         alt={props.alt}

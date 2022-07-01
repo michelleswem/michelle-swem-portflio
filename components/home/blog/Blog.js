@@ -46,7 +46,9 @@ export const Blog = () => {
         </ul>
       </div>
       <div className="text-center">
-        <Button className="btn btn__round">See more posts &rarr;</Button>
+        <Button className="btn btn__round" link="/blog">
+          See more posts &rarr;
+        </Button>
       </div>
     </section>
   );

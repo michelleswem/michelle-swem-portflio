@@ -1,9 +1,17 @@
 @import "../../../sass/abstracts/variables";
 .logobox {
   &__name {
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     font-weight: 800;
     font-size: 1.8rem;
-    color: $color-red;
+    color: $color-white;
+  }
+
+  &__dot {
+    background-color: $color-red;
+    height: 0.5rem;
+    width: 0.5rem;
+    display: inline-block;
+    border-radius: 50%;
   }
 }

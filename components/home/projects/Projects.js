@@ -5,7 +5,7 @@ import classes from "./Projects.module.scss";
 
 export const Projects = () => {
   return (
-    <section className={classes["section-portflio"]}>
+    <section className={classes["section-portflio"]} id="projects">
       <div className="text-center margin-bottom">
         <h1 className="heading-primary heading-primary__white">Projects</h1>
       </div>
@@ -144,7 +144,9 @@ export const Projects = () => {
       </div>
 
       <div className="text-center">
-        <Button className="btn btn__round">See more projects &rarr;</Button>
+        <Button className="btn btn__round" Link="/projects">
+          See more projects &rarr;
+        </Button>
       </div>
     </section>
   );

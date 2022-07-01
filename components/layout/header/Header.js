@@ -1,13 +1,47 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState, useEffect, useRef } from "react";
 import { Logo } from "../../UI/Logo";
 import classes from "./Header.module.scss";
 
 export const Header = () => {
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+  const [lastScrollPosition, setLastScrollPosition] = useState(0);
+  const headerRef = useRef();
+
+  const scrollHandler = () => {
+    window.addEventListener(
+      "scroll",
+      () => {
+        const scrollPostion =
+          window.scrollY || document.documentElement.scrollTop;
+        if (scrollPostion > 1) {
+          setIsScrollingUp(true);
+        } else {
+          setIsScrollingUp(false);
+        }
+      },
+      false
+    );
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      scrollHandler();
+    }, 100);
+
+    return () => {
+      removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollPosition]);
+
   const router = useRouter();
   const currentRoute = router.pathname;
   return (
-    <header className={classes.header}>
+    <header
+      className={`${classes.header} ${isScrollingUp && classes.scrolled}`}
+      ref={headerRef}
+    >
       <Logo />
 
       <nav className={classes.nav}>

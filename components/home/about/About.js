@@ -32,7 +32,9 @@ export const About = () => {
           </p>
 
           <div className={classes.cta}>
-            <Button className="btn__round">My Projects</Button>
+            <Button className="btn__round" link="#projects">
+              My Projects
+            </Button>
 
             <Button
               className="btn__round btn__round--red"

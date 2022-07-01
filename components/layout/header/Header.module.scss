@@ -11,8 +11,17 @@
   align-items: center;
   color: $color-white;
   padding: 3rem 12rem;
+  position: relative;
 }
 
+.scrolled {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: $color-primary-1;
+  box-shadow: 1.8rem 4rem -3rem $color-primary-1;
+  animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+}
 
 .nav {
   &__item {
@@ -50,5 +59,16 @@
     width: 100%;
     left: 0;
     color: $color-red;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
