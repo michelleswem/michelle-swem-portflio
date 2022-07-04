@@ -3,6 +3,10 @@
 /* ----------------------------------------------- */
 @import "../../../sass/abstracts/variables";
 
+.section-portflio {
+  background-color: $color-primary-1;
+}
+
 .portfolioList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

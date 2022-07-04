@@ -11,7 +11,7 @@ export const BlogCard = (props) => {
         priority
         layout="responsive"
         src={props.image}
-        alt={props.alt}
+        alt={props.title}
         className={classes.card__image}
       />
       <div className={classes.card__container}>
