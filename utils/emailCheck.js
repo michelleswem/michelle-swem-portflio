@@ -1,1 +1,1 @@
-export const isEmail = (value) => value.trim().includes("@");
+export const isEmail = (value) => value.trim().includes('@');

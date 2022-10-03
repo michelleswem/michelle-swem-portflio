@@ -1,4 +1,4 @@
-import classes from "./YouTubeIcon.module.scss";
+import classes from './YouTubeIcon.module.scss';
 export const YouTubeIcon = () => {
   return (
     <svg

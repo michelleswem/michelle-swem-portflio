@@ -1,17 +1,17 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useState, useEffect, useRef } from "react";
-import { Logo } from "../../UI/Logo";
-import classes from "./Header.module.scss";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState, useEffect, useRef } from 'react';
+import { Logo } from '../../UI/Logo';
+import classes from './Header.module.scss';
 
 export const Header = () => {
   const [isScrollingUp, setIsScrollingUp] = useState(false);
-  const [lastScrollPosition, setLastScrollPosition] = useState(0);
+  const [lastScrollPosition] = useState(0);
   const headerRef = useRef();
 
   const scrollHandler = () => {
     window.addEventListener(
-      "scroll",
+      'scroll',
       () => {
         const scrollPostion =
           window.scrollY || document.documentElement.scrollTop;
@@ -31,7 +31,7 @@ export const Header = () => {
     }, 100);
 
     return () => {
-      removeEventListener("scroll", handleScroll);
+      removeEventListener('scroll', handleScroll);
     };
   }, [lastScrollPosition]);
 
@@ -48,20 +48,20 @@ export const Header = () => {
         <ul className={classes.nav__list}>
           <li className={classes.nav__item}>
             <Link href="/">
-              <a className={currentRoute === "/" ? classes.active : ""}>Home</a>
+              <a className={currentRoute === '/' ? classes.active : ''}>Home</a>
             </Link>
           </li>
 
           <li className={classes.nav__item}>
             <Link href="/projects">
-              <a className={currentRoute === "/projects" ? classes.active : ""}>
+              <a className={currentRoute === '/projects' ? classes.active : ''}>
                 Projects
               </a>
             </Link>
           </li>
           <li className={classes.nav__item}>
             <Link href="/blog">
-              <a className={currentRoute === "/blog" ? classes.active : ""}>
+              <a className={currentRoute === '/blog' ? classes.active : ''}>
                 Blog
               </a>
             </Link>

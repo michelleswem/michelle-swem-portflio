@@ -1,5 +1,5 @@
-import { BlogItem } from "../blogItgem";
-import classes from "./BlogList.module.scss";
+import { BlogItem } from '../blogItgem';
+import classes from './BlogList.module.scss';
 
 export const BlogList = (props) => {
   return (

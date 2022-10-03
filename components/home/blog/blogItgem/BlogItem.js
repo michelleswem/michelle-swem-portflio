@@ -1,6 +1,6 @@
-import { BlogCard } from "../../../UI/BlogCard";
+import { BlogCard } from '../../../UI/BlogCard';
 
-import classes from "./BlogItem.module.scss";
+import classes from './BlogItem.module.scss';
 
 export const BlogItem = (props) => {
   return (

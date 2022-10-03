@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 export const useForm = (validateValue) => {
-  const [enteredValue, setEnteredValue] = useState("");
+  const [enteredValue, setEnteredValue] = useState('');
   const [isTouched, setIsTouched] = useState(false);
 
   const valueIsValid = validateValue(enteredValue);
@@ -15,7 +15,7 @@ export const useForm = (validateValue) => {
   };
 
   const reset = () => {
-    setEnteredValue("");
+    setEnteredValue('');
     setIsTouched(false);
   };
   return {

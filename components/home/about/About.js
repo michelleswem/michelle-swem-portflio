@@ -1,13 +1,13 @@
-import { socials } from "../../../constants/social-links";
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "../../UI/Button/Button";
-import classes from "./About.module.scss";
-import { YouTubeIcon } from "./youtubeIcon";
+import { socials } from '../../../constants/social-links';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '../../UI/Button';
+import classes from './About.module.scss';
+import { YouTubeIcon } from './youtubeIcon';
 
 export const About = () => {
   return (
-    <section className={classes["section-about"]}>
+    <section className={classes['section-about']}>
       <div className="row">
         <div className="col-1-of-2">
           <ul className={classes.socials}>
@@ -20,12 +20,12 @@ export const About = () => {
             ))}
           </ul>
           <h1 className="heading-primary">Swem Michelle</h1>
-          <p className={classes["about-me"]}>
+          <p className={classes['about-me']}>
             I&apos;m a Frontend Developer and content writer with a great
             passion for building things with code. I live in Nigeria where I
             build Client facing user-interfaces for websites and apps.
           </p>
-          <p className={classes["about-me"]}>
+          <p className={classes['about-me']}>
             My believe is, When you embrace yourself and you believe in your
             dreams, then you can be whatever you want to be as long as you put
             your heart to it.
@@ -53,6 +53,7 @@ export const About = () => {
               src="/assets/michelle.png"
               className={classes.shape__photo}
               alt="Swem Michelle"
+              priority
             />
           </figure>
         </div>

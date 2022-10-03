@@ -1,11 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "../../UI/Button";
-import classes from "./Projects.module.scss";
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '../../UI/Button';
+import classes from './Projects.module.scss';
 
 export const Projects = () => {
   return (
-    <section className={classes["section-portflio"]} id="projects">
+    <section className={classes['section-portflio']} id="projects">
       <div className="text-center margin-bottom">
         <h1 className="heading-primary heading-primary__white">Projects</h1>
       </div>
@@ -49,6 +49,7 @@ export const Projects = () => {
             className={`${classes.portfolioList__item3} ${classes.portfolioList__item}`}
           >
             <Image
+              priority
               layout="fill"
               src="/assets/portfolio-item3.jpg"
               alt="expense-tracker"

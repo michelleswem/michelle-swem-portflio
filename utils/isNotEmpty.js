@@ -1,1 +1,1 @@
-export const isNotEmpty = (value) => value.trim() !== "";
+export const isNotEmpty = (value) => value.trim() !== '';

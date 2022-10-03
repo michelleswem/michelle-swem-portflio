@@ -2,9 +2,9 @@
 * PROJECT BASICS
 **********/
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap");
-@import "../sass/abstracts/variables";
-@import "../sass/abstracts/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+@import '../sass/abstracts/variables';
+@import '../sass/abstracts/mixins';
 
 * {
   margin: 0;
@@ -23,7 +23,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   text-rendering: optimizeLegibility;

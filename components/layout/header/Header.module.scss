@@ -2,7 +2,7 @@
 /* HEADER */
 /* ----------------------------------------------- */
 
-@import "../../../sass/abstracts/variables";
+@import '../../../sass/abstracts/variables';
 .header {
   font-size: 1.8rem;
   font-weight: 700;
@@ -41,7 +41,7 @@
       border: none;
     }
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       left: 50%;

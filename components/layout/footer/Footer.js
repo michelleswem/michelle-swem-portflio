@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { socials } from "../../../constants/social-links";
-import { Logo } from "../../UI/Logo";
+import Link from 'next/link';
+import { socials } from '../../../constants/social-links';
+import { Logo } from '../../UI/Logo';
 
-import classes from "./Footer.module.scss";
+import classes from './Footer.module.scss';
 
 export const Footer = () => {
   const year = new Date().getFullYear();

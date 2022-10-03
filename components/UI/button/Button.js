@@ -1,7 +1,7 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export const Button = (props) => {
-  const classNames = "btn " + props.className;
+  const classNames = 'btn ' + props.className;
 
   if (props.link) {
     return (
@@ -15,7 +15,7 @@ export const Button = (props) => {
     <button
       onClick={props.onClick}
       className={classNames}
-      type={props.type || "button"}
+      type={props.type || 'button'}
     >
       {props.children}
     </button>

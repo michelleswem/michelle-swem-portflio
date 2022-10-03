@@ -1,2 +1,2 @@
-export { isNotEmpty} from './isNotEmpty'
-export {isEmail} from './emailCheck'
+export { isNotEmpty } from './isNotEmpty';
+export { isEmail } from './emailCheck';

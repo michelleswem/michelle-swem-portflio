@@ -1,1 +1,1 @@
-export { BlogCard } from "./BlogCard";
+export { BlogCard } from './BlogCard';

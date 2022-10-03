@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { Button } from "../Button/index";
-import classes from "./BlogCard.module.scss";
+import Image from 'next/image';
+import { Button } from '../Button';
+import classes from './BlogCard.module.scss';
 
 export const BlogCard = (props) => {
   return (

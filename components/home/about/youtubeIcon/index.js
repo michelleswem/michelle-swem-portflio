@@ -1,1 +1,1 @@
-export { YouTubeIcon } from "./YouTubeIcon";
+export { YouTubeIcon } from './YouTubeIcon';

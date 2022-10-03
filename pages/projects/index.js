@@ -1,4 +1,4 @@
-import { Projects } from "../../components/home/projects";
+import { Projects } from '../../components/home/projects';
 
 const ProjectPage = () => {
   return <Projects />;

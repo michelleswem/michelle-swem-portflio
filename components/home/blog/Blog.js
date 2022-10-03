@@ -1,11 +1,11 @@
-import { DUMMY_BLOG_POST } from "../../../constants/dummy-post";
-import { Button } from "../../UI/Button";
-import classes from "./Blog.module.scss";
-import { BlogList } from "./blogLists";
+import { DUMMY_BLOG_POST } from '../../../constants/dummy-post';
+import { Button } from '../../UI/Button';
+import classes from './Blog.module.scss';
+import { BlogList } from './blogLists';
 
 export const Blog = () => {
   return (
-    <section className={classes["section-blog"]}>
+    <section className={classes['section-blog']}>
       <div className="text-center margin-bottom">
         <h1 className="heading-primary heading-primary__white">Blog</h1>
       </div>
