@@ -1,0 +1,11 @@
+@import '../../../sass/abstracts/mixins';
+@import '../../../sass/abstracts/variables';
+
+.btn {
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
