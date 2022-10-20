@@ -14,7 +14,7 @@ export const Blog = () => {
         <BlogList posts={DUMMY_BLOG_POST} />
       </div>
       <div className="text-center">
-        <Button className="btn btn__round" link="/blog">
+        <Button className="btnround" link="/blog">
           See more posts &rarr;
         </Button>
       </div>

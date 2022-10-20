@@ -145,7 +145,7 @@ export const Projects = () => {
       </div>
 
       <div className="text-center">
-        <Button className="btn btn__round" Link="/projects">
+        <Button className=" btnround" Link="/projects">
           See more projects &rarr;
         </Button>
       </div>

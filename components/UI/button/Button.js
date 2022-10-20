@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import classes from './Button.module.scss';
 
 export const Button = (props) => {
-  const classNames = 'btn ' + props.className;
+  const classNames = `${classes.btn} ${props.className}`;
 
   if (props.link) {
     return (

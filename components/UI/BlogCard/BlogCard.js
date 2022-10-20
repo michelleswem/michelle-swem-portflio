@@ -19,7 +19,7 @@ export const BlogCard = (props) => {
         <h3 className={classes.card__title}>{props.title}</h3>
 
         <p className={classes.card__text}>{props.text}</p>
-        <Button className=" btn btn__text">Read more &rarr;</Button>
+        <Button className="btntext">Read more &rarr;</Button>
       </div>
     </div>
   );

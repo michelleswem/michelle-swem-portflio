@@ -32,12 +32,12 @@ export const About = () => {
           </p>
 
           <div className={classes.cta}>
-            <Button className="btn__round" link="#projects">
+            <Button className="btnround" link="#projects">
               My Projects
             </Button>
 
             <Button
-              className="btn__round btn__round--red"
+              className="btnround btnround--red"
               link="https://www.youtube.com/channel/UCyl_xQGeSaY--gQ8s1R7VtA/featured"
             >
               <YouTubeIcon />

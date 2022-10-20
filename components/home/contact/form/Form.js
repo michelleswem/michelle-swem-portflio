@@ -127,7 +127,7 @@ export const Form = () => {
         )}
       </div>
       <div className={classes.form__action}>
-        <Button type="submit" className="btn__round btn__round--red">
+        <Button type="submit" className="btnround btnround--red btnround--lg">
           Send Message
         </Button>
         {isLoading && <span className={classes.spinner}></span>}
