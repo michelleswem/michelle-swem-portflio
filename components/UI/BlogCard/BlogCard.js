@@ -2,25 +2,27 @@ import Image from 'next/image';
 import { Button } from '../Button';
 import classes from './BlogCard.module.scss';
 
-export const BlogCard = (props) => {
+export const BlogCard = ({ id, image, title, date, text }) => {
   return (
-    <div className={classes.card}>
+    <article className={classes.card}>
       <Image
         width={1280}
         height={854}
         priority
         layout="responsive"
-        src={props.image}
-        alt={props.title}
+        src={image}
+        alt={title}
         className={classes.card__image}
       />
       <div className={classes.card__container}>
-        <span>{props.date}</span>
-        <h3 className={classes.card__title}>{props.title}</h3>
+        <span>{date}</span>
+        <h3 className={classes.card__title}>{title}</h3>
 
-        <p className={classes.card__text}>{props.text}</p>
-        <Button className="btntext">Read more &rarr;</Button>
+        <p className={classes.card__text}>{text}</p>
+        <Button className="btntext" link={`/blog/${id}`}>
+          Read more &rarr;
+        </Button>
       </div>
-    </div>
+    </article>
   );
 };

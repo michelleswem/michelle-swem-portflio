@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { socials } from '../../../constants/social-links';
+import { socials } from '../../../data/social-links';
 import { Logo } from '../../UI/Logo';
 
 import classes from './Footer.module.scss';

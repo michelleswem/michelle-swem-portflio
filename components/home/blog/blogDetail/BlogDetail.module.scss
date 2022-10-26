@@ -1,0 +1,58 @@
+@import '../../../../sass/abstracts/variables';
+
+.detail {
+  color: $color-grey;
+  font-size: 1.8rem;
+}
+.imgbox {
+  margin-bottom: 3rem;
+  padding: 0 1.5rem;
+}
+.blogimage {
+  border-radius: 1rem;
+}
+
+.quote {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 0.6rem;
+  background-color: $color-primary-1;
+  font-style: italic;
+}
+.text {
+  margin-bottom: 1.6rem;
+}
+
+.headingTertiary {
+  font-size: 2.5rem;
+  color: $color-white;
+  margin-bottom: 2.5rem;
+  word-wrap: break-word;
+}
+.lists {
+  padding-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.lists li {
+  list-style-type: disc;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.btnbox {
+  margin-top: 4rem;
+}
+.btndark {
+  background: $color-primary-1;
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  color: $color-white;
+  transition: all 0.2s ease-out;
+  &:hover {
+    background-color: $color-red;
+  }
+}

@@ -5,9 +5,9 @@ import classes from './Projects.module.scss';
 
 export const Projects = () => {
   return (
-    <section className={classes['section-portflio']} id="projects">
+    <section id="projects" className={classes.sectionPro}>
       <div className="text-center margin-bottom">
-        <h1 className="heading-primary heading-primary__white">Projects</h1>
+        <h2 className="heading-secondary heading-secondary__white">Projects</h2>
       </div>
 
       <div className="row">

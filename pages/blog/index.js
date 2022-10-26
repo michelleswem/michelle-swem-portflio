@@ -1,6 +1,7 @@
-import { Blog } from '../../components/home/blog';
+import { BlogContent } from '../../components/UI/BlogContent';
+
 const BlogPage = () => {
-  return <Blog />;
+  return <BlogContent />;
 };
 
 export default BlogPage;

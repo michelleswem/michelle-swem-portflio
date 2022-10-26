@@ -3,6 +3,10 @@
 /* ----------------------------------------------- */
 @import '../../../sass/abstracts/variables';
 
+.About {
+  background-color: $color-primary-1;
+}
+
 .about-me {
   font-size: 2rem;
   color: $color-grey;
@@ -11,6 +15,20 @@
   }
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.col-1-of-lg {
+  flex: 0 0 58.333333%;
+  margin-right: 1.5rem;
+}
+
+.col-1-of-2-sm {
+  flex: 1;
+}
 .cta {
   display: flex;
   align-items: center;
