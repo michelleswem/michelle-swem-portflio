@@ -1,4 +1,5 @@
 @import '../../../../sass/abstracts/variables';
+@import '../../../../sass/abstracts/mixins';
 
 .form {
   &__group {
@@ -9,18 +10,34 @@
   &__box {
     display: flex;
     align-items: flex-start;
-
     flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    &__box {
+      flex-direction: column;
+    }
   }
 
   &__email {
     flex: 1;
     margin-left: 15px;
   }
+  @media only screen and (max-width: $bp-large) {
+    &__email {
+      margin-left: 0;
+    }
+  }
 
   &__name {
     flex: 0 0 50%;
     margin-right: 15px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    &__name {
+      margin-right: 0;
+    }
   }
 
   &__input {
@@ -56,7 +73,6 @@
 }
 
 .spinner {
-  visibility: hidden;
   display: inline-block;
   background-color: $color-primary-3;
   opacity: 0.75;
@@ -96,16 +112,9 @@
   }
 }
 
-// @keyframes blink {
-// 	from {
-// 		opacity: 0;
-// 	}
-
-// 	50% {
-// 		opacity: 1;
-// 	}
-
-// 	to {
-// 		opacity: 0;
-// 	}
-// }
+.error {
+  border: 2px solid $color-red;
+  margin: 2em 0.5em 1em;
+  padding: 0.2em 1em;
+  font-size: 1.6rem;
+}

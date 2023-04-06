@@ -1,1 +1,0 @@
-export { BlogDetail } from './BlogDetail';

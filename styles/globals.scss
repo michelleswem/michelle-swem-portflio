@@ -22,6 +22,11 @@ html {
   font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
 }
+@media only screen and (max-width: $bp-small) {
+  html {
+    font-size: 50%;
+  }
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -42,12 +47,27 @@ section {
   padding: 10rem 0 10rem 0;
 }
 
+@media only screen and (max-width: $bp-large) {
+  section {
+    padding: 5rem 0 10rem 0;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  section {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
 .heading-primary,
 .heading-secondary {
   font-size: 6.2rem;
   line-height: 1;
   font-weight: bold;
   margin-bottom: 2.5rem;
+  text-transform: uppercase;
+
   &__white {
     color: $color-white;
   }
@@ -69,6 +89,38 @@ section {
   @include clearfix;
   &:not(:last-child) {
     margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: $bp-largest) {
+  .row {
+    width: 100rem;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .row {
+    width: 96rem;
+  }
+}
+
+@media only screen and (max-width: $bp-min-large) {
+  .row {
+    width: 72rem;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .row {
+    width: 58rem;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .row {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
   }
 }
 

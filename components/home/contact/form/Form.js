@@ -1,4 +1,5 @@
 import { Button } from '../../../UI/Button';
+import { Notification } from '../../../UI/Notification';
 import { isEmail, isNotEmpty } from '../../../../utils';
 import { useForm } from '../../../../hooks/use-form';
 import classes from './Form.module.scss';
@@ -6,6 +7,13 @@ import { useState } from 'react';
 
 export const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
+
+  const hideNotification = () => {
+    setShowNotification(false);
+  };
   const {
     value: enteredName,
     hasError: nameHasError,
@@ -46,20 +54,39 @@ export const Form = () => {
     formIsValid = true;
   }
 
-  const submitFormHandler = (event) => {
+  const submitFormHandler = async (event) => {
     event.preventDefault();
     if (!formIsValid) {
       return;
     }
     setIsLoading(true);
-
-    console.log(enteredName, enteredEmail, enteredSubject, enteredMessage);
-
+    setError(null);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: JSON.stringify({
+          email: enteredEmail,
+          name: enteredName,
+          subject: enteredSubject,
+          message: enteredMessage,
+        }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.message || 'Something went wrong');
+      }
+      setSuccess(true);
+      resetNameInput();
+      resetEmailInput();
+      resetSubjectInput();
+      resetMessageInput();
+      setShowNotification(true);
+    } catch (error) {
+      setError(error.message || 'Error found');
+      setIsLoading(false);
+    }
     setIsLoading(false);
-    resetNameInput();
-    resetEmailInput();
-    resetSubjectInput();
-    resetMessageInput();
   };
 
   return (
@@ -67,6 +94,7 @@ export const Form = () => {
       <div className={classes.form__box}>
         <div className={` ${classes.form__group} ${classes.form__name}`}>
           <input
+            required
             id="name"
             type="text"
             placeholder="Your Name"
@@ -81,6 +109,7 @@ export const Form = () => {
         </div>
         <div className={` ${classes.form__group} ${classes.form__email}`}>
           <input
+            required
             id="email"
             type="email"
             placeholder="Your Email"
@@ -98,6 +127,7 @@ export const Form = () => {
 
       <div className={classes.form__group}>
         <input
+          required
           id="subject"
           type="text"
           placeholder="Your Subject"
@@ -113,6 +143,7 @@ export const Form = () => {
       </div>
       <div className={classes.form__group}>
         <textarea
+          required
           id="message"
           type="text"
           placeholder="Your Message"
@@ -131,6 +162,10 @@ export const Form = () => {
           Send Message
         </Button>
         {isLoading && <span className={classes.spinner}></span>}
+        {error && <p className={classes.error}>{error}</p>}
+        {success && showNotification && (
+          <Notification onShow={hideNotification} />
+        )}
       </div>
     </form>
   );

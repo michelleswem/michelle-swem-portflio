@@ -3,6 +3,7 @@
 /* ----------------------------------------------- */
 
 @import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
 .header {
   font-size: 1.8rem;
   font-weight: 700;
@@ -10,8 +11,15 @@
   justify-content: space-between;
   align-items: center;
   color: $color-white;
-  padding: 3rem 12rem;
+  padding: 3rem 8vmin 2.5rem;
+  flex-wrap: wrap;
   position: relative;
+}
+
+@media only screen and (max-width: $bp-smallest) {
+  .header {
+    justify-content: center;
+  }
 }
 
 .scrolled {
@@ -37,6 +45,7 @@
     font-weight: inherit;
     display: block;
     position: relative;
+    text-transform: uppercase;
     &:focus {
       border: none;
     }
@@ -58,6 +67,24 @@
   .active::after {
     width: 100%;
     left: 0;
+  }
+}
+
+@media only screen and (max-width: $bp-min-large) {
+  .nav {
+    margin-left: 1rem;
+    &__item {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    a {
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 

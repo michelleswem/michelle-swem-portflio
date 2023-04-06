@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { socials } from '../../../data/social-links';
 import { Logo } from '../../UI/Logo';
-
 import classes from './Footer.module.scss';
 
 export const Footer = () => {

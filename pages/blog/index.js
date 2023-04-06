@@ -1,7 +1,20 @@
-import { BlogContent } from '../../components/UI/BlogContent';
+import { Fragment } from 'react';
+import { AllPosts } from '../../components/posts/allPosts/AllPosts';
+import Head from 'next/head';
 
 const BlogPage = () => {
-  return <BlogContent />;
+  return (
+    <Fragment>
+      <Head>
+        <title>Michelle Swem's Site</title>
+        <meta
+          name="description"
+          content="I post about programming, web developement and general live stuffs"
+        />
+      </Head>
+      <AllPosts />
+    </Fragment>
+  );
 };
 
 export default BlogPage;

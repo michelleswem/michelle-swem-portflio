@@ -1,0 +1,27 @@
+@import '../../../sass/abstracts/variables';
+
+.item {
+  border-bottom: 1px solid $border-color;
+  padding: 0.8rem 0;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.tertiary-heading {
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.titlelink {
+  color: $color-white;
+  text-decoration: none;
+  font-size: inherit;
+}
+.text {
+  font-size: 1.8rem;
+  color: $color-grey;
+}
+
+.item:hover {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}

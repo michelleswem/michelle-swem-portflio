@@ -21,7 +21,7 @@ export const Header = () => {
           setIsScrollingUp(false);
         }
       },
-      false
+      false,
     );
   };
 
@@ -31,7 +31,7 @@ export const Header = () => {
     }, 100);
 
     return () => {
-      removeEventListener('scroll', handleScroll);
+      removeEventListener('scroll', scrollHandler);
     };
   }, [lastScrollPosition]);
 
@@ -43,7 +43,6 @@ export const Header = () => {
       ref={headerRef}
     >
       <Logo />
-
       <nav className={classes.nav}>
         <ul className={classes.nav__list}>
           <li className={classes.nav__item}>

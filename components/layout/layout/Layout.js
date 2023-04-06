@@ -3,10 +3,11 @@ import { Footer } from '../footer';
 import { Header } from '../header';
 
 export const Layout = (props) => {
+  const { children } = props;
   return (
     <Fragment>
       <Header />
-      <main>{props.children}</main>
+      <main>{children}</main>
       <Footer />
     </Fragment>
   );

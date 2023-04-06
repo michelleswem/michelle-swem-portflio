@@ -3,6 +3,7 @@
 /* ----------------------------------------------- */
 
 @import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
 .footer {
   color: $color-grey;
   padding: 10rem 0 0;
@@ -18,10 +19,23 @@
     margin-left: auto;
   }
 
+  @media only screen and (max-width: $bp-largest) {
+    &__text {
+      width: 55%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__text {
+      width: 80%;
+    }
+  }
+
   &__socials {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 4rem;
     margin-bottom: 4rem;
   }

@@ -2,6 +2,7 @@
 /* ABOUT */
 /* ----------------------------------------------- */
 @import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
 
 .About {
   background-color: $color-primary-1;
@@ -18,7 +19,7 @@
 .container {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .col-1-of-lg {
@@ -26,14 +27,40 @@
   margin-right: 1.5rem;
 }
 
+@media only screen and (max-width: $bp-min-large) {
+  .col-1-of-lg {
+    flex: 1;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .col-1-of-lg {
+    text-align: center;
+  }
+}
+
 .col-1-of-2-sm {
   flex: 1;
 }
+
+@media only screen and (max-width: $bp-min-large) {
+  .col-1-of-2-sm {
+    display: none;
+  }
+}
+
 .cta {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 4rem;
+}
+@media only screen and (max-width: $bp-medium) {
+  .cta {
+    justify-content: center;
+  }
 }
 
 .shape {
@@ -46,9 +73,9 @@
 .socials {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 10rem;
   margin-bottom: 6rem;
-
   &__list {
     &:not(:last-child) {
       margin-right: 1.5rem;
@@ -74,5 +101,12 @@
       height: 2rem;
       width: 2rem;
     }
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .socials {
+    justify-content: center;
+    margin-bottom: 3rem;
   }
 }
