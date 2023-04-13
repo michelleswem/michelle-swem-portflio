@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './PostDetail.module.scss';
 import Image from 'next/image';
-import { Button } from '../../../UI/Button';
+import { Button } from '../../UI/Button';
 
 export const PostDetail = () => {
   return (

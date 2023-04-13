@@ -1,7 +1,6 @@
 // api/contact
 import { MongoClient } from 'mongodb';
-const credential =
-  'mongodb+srv://Michelle:wnJ9dpgEo6h6adv9@cluster0.ufceq.mongodb.net/my-website?retryWrites=true&w=majority';
+const credential = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.ufceq.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
 
 const handler = async (req, res) => {
   if (req.method === 'POST') {
