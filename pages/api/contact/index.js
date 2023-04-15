@@ -1,7 +1,9 @@
 // api/contact
 import { MongoClient } from 'mongodb';
-const credential = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.ufceq.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
 
+// const credential =
+//   'mongodb+srv://vercel-admin-user:0m8Vz3nYFAByIn4h@cluster0.ufceq.mongodb.net/my-website?retryWrites=true&w=majority';
+const credential = process.env.MONGODB_URI;
 const handler = async (req, res) => {
   if (req.method === 'POST') {
     const { email, name, subject, message } = req.body;
