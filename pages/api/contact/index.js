@@ -1,8 +1,6 @@
 // api/contact
 import { MongoClient } from 'mongodb';
 
-// const credential =
-//   'mongodb+srv://vercel-admin-user:0m8Vz3nYFAByIn4h@cluster0.ufceq.mongodb.net/my-website?retryWrites=true&w=majority';
 const credential = process.env.MONGODB_URI;
 const handler = async (req, res) => {
   if (req.method === 'POST') {
